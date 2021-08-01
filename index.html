@@ -114,7 +114,7 @@
                 <li>기존 API 서비스에 영향이 없게끔 API 호출 정책 관리</li>
                 <br/>
                 <h4>기술스택</h4>
-                Grivitee, Elasticsearch, Zookeeper
+                Grivitee, Elasticsearch, Eureka
 
                 <hr>
 
@@ -135,19 +135,110 @@
                 <h4>기술스택</h4>
                 Node.js, Express, Typescript, TypeORM, Swagger
 
-                <!-- <h3>
-                    <img src="./images/refactoring.png" width="25" height="25"> 
+                <hr>
+
+                <h3>
+                    <img src="./images/gpx.png" width="25" height="25"> 주행기록 분석
                 </h3>
-                <span>2020.01 ~ </span>
+                <span>2020.01 ~ 2020.02</span>
                 <h4>Description.</h4>
-                
+                오픈라이더 사용자들의 주행기록 파일을 분석하여 새로운 비지니스 모델을 찾고자 시작하였습니다.<br/>
+                Strava에서 서비스하고있는 구간랭킹을 벤치마킹하여 오픈라이더 사용자의 주행기록 파일을 파싱하여
+                특정 구간을 달린 사람들의 주행기록을 분석해보았습니다.
                 <br/><br/>
-                <h4></h4>
-                <li></li>
-                <li></li>
-                <li></li>
+                <h4>상세내용</h4>
+                <li>멀티쓰레드를 사용해 컴퓨팅파워를 최대한 활용하도록 작성</li>
+                <li>Disk I/O 의 느린속도를 보완하고자 많은 시행착오를 겪음</li>
                 <br/>
-                <h4></h4> -->
+                <h4>기술스택</h4>
+                Java, Sass Parser
+
+                <hr>
+
+                <h3>
+                    <img src="./images/www.png" width="25" height="25"> 오픈라이더 신규포탈
+                </h3>
+                <span>2020.03 ~ 2020.06</span>
+                <h4>Description.</h4>
+                기획과 퍼블리싱을 지원받아 실서비스를 하기 위한 웹페이지를 구성하였습니다.<br/>
+                회사에서 판매중인 자전거 용품과 제작중인 유튜브 컨텐츠를 노출하고,<br/>
+                오픈라이더 앱의 데이터를 웹에서도 접근할 수 있게끔 하였습니다.
+                <br/><br/>
+                <h4>상세내용</h4>
+                <li>HTML, Javascript, CSS 로 퍼블리싱받아 Vue.js 코드로 변환작업 수행</li>
+                <li>Nuxt.js 프레임워크를 이용해서 작성</li>
+                <li>인증프로세스를 만들어 별도 특정 페이지를 접근 가능하게끔 구성</li>
+                <br/>
+                <h4>기술스택</h4>
+                Node.js, Javascript, Vue.js, Express, Nuxt.js, Webpack, ORM(Sequelize)
+
+                <hr>
+
+                <h3>
+                    <img src="./images/bike.jpg" width="25" height="25"> 2020 서울 자전거메이트
+                </h3>
+                <span>2020.07 ~ 2020.11</span>
+                <h4>Description.</h4>
+                서울시에서 주관하는 캠페인인 서울 자전거메이트를 오픈라이더를 통해 서비스하였습니다.<br/>
+                서울 자전거 도로의 문제상황을 자전거 이용자들이 직접 신고하여 서울시 관리자가 접수 후 처리할 수 있는 플랫폼으로 사용하고자 하였습니다.
+                <br/><br/>
+                <h4>상세내용</h4>
+                <li>신규 서비스를 위한 테이블 설계</li>
+                <li>현재 서비스되고있는 포탈에 관리자 페이지를 추가</li>
+                <li>오픈라이더 앱에서 신고된 데이터를 관리자 페이지에 연동</li>
+                <li>외부 업체에 신고된 데이터의 정보를 제공해주기 위해 OPEN API 활용</li>
+                <br/>
+                <h4>기술스택</h4>
+                Node.js, Javascript, Vue.js, Express, Nuxt.js, Webpack, ORM(Sequelize), Mysql
+
+                <hr>
+
+                <h3>
+                    <img src="./images/logo.png" width="25" height="25"> 그룹라이딩 기능 개발
+                </h3>
+                <span>2020.11 ~ 현재</span>
+                <h4>Description.</h4>
+                오픈라이더 앱에서 그룹라이딩 신규기능을 추가하기 위한 기술 검증 및 테스트를 진행하였습니다.<br/>
+                추후 업데이트에 반영될 사항으로 그룹라이딩을 하기위한 다양한 기능들을 차례대로 개발중입니다.
+                <br/><br/>
+                <h4>상세내용</h4>
+                <li>DB설계 및 화면설계</li>
+                <li>채팅기능 구현</li>
+                <li>Mqtt 프로토콜을 이용한 메세징 서버 구현</li>
+                <br/>
+                <h4>기술스택</h4>
+                Node.js, Java, Javascript, Express, Mysql, Mqtt, Firebase
+
+
+                <hr>
+
+                <h3>
+                    <img src="./images/logo.png" width="25" height="25"> 오픈라이더 커뮤니티 개편
+                </h3>
+                <span>2021.02 ~ 2021.05</span>
+                <h4>Description.</h4>
+                오픈라이더 앱에서 기존에 서비스하고있는 클럽 기능 활성화를 위해 웹뷰로 전면 이관하였습니다.<br/>
+                다양한 이벤트와 빠른 배포를 위해선 상대적으로 웹으로 구현하는게 낫다고 판단되어서
+                기존의 클럽 기능 이관 및 기타 메뉴를 '커뮤니티' 라는 이름으로 통합하였습니다.
+                <br/><br/>
+                <h4>상세내용</h4>
+                <li>DB설계 및 기능이관을 위한 마이그레이션</li>
+                <li>기존 포탈 프로젝트에 해당 페이지만 Vue router로 추가구성</li>
+                <li>앱 실행시에 발급된 토큰정보로 인증하여 접근하게끔 작성</li>
+                <br/>
+                <h4>기술스택</h4>
+                Node.js, Javascript, Vue.js, Express, Webpack, ORM(Sequelize), Mysql
+
+
+                <!-- 기술 사항 -->
+                
+
+                <!-- Contact -->
+                <hr>
+                <h3>Contact.</h3>
+                <li><a href="mailto:joohyeong@gmail.com">이메일</a></li>   
+                <li><a href="http://bubobubo003.tistory.com/" target='_blank'>블로그</a></li> 
+                <li><a href="https://github.com/JooHyeongLee" target='_blank'>깃허브</a></li> 
             </div>
         </div>
     </div>
